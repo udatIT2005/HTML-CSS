@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Absolute</title>
+  </head>
+  <style>
+    .box {
+      background-color: green;
+      position: sticky;
+      border: 1px solid green;
+      top: 50px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+    }
+    .item1 {
+      background-color: aqua;
+      top: 50%;
+      left: 50%;
+      transform: translate(40%, 40%);
+      position: absolute;
+    }
+    .item2 {
+      top: 50%;
+      right: 50%;
+      transform: translate(-40%, -40%);
+      position: absolute;
+      background-color: brown;
+    }
+    button {
+      position: fixed;
+      right: 50px;
+      bottom: 100px;
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="item1">gọi</div>
+
+      <div class="item2">zalo</div>
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Est debitis quo
+      nulla aut iure nemo dolorem enim reprehenderit ex necessitatibus ea
+      numquam optio commodi rem voluptatum reiciendis fugit, veniam dicta!
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+      delectus beatae amet. Similique quisquam odit maiores laboriosam,
+      aspernatur est, quis consequatur eligendi nostrum molestiae dolores
+      laudantium repellendus accusantium accusamus sit. Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Officia, quam praesentium. Repellendus
+      tempore autem eaque odit vitae officia, dolores, aliquid beatae laborum
+      possimus dolorem libero explicabo ipsa hic error ab! Lorem ipsum dolor sit
+      amet consectetur adipisicing elit. Voluptatum corporis molestias saepe
+      consequatur blanditiis fugiat eum tempore possimus soluta distinctio, vel
+      et sequi repellat iste molestiae quasi culpa hic quia! Lorem ipsum dolor,
+      sit amet consectetur adipisicing elit. Ut qui tempora expedita accusamus.
+      Quidem voluptatibus animi ipsa eligendi at, sit in veritatis suscipit?
+      Perferendis blanditiis obcaecati maiores mollitia in expedita? Lorem ipsum
+      dolor sit, amet consectetur adipisicing elit. Harum impedit exercitationem
+      modi fugiat eos mollitia ab quos distinctio consequatur nihil alias
+      nesciunt, atque, temporibus dolorem aliquid ut, pariatur quaerat quisquam.
+    </div>
+    <button>zalo</button>
+  </body>
+</html>
