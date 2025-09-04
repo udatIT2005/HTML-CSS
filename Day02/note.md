@@ -27,4 +27,4 @@
 - Kết hợp giữa relative và fixed
 - Bình thường nó chạy như realative nhưng khi bạn cuộn trang đến 1 điểm thì nó lại dính lại như fixed
 
-- overley : thì dùng
+- overley : là một lớp layer đè lên nội dung khác thường dùng để : hiển thị thông tin khi hover vào ảnh hoặc tạo hiệu ứng mờ nền , ...
