@@ -1,0 +1,4 @@
+- thuộc tính \* là universal Selector (bộ chọn toàn cục) áp dụng style trong html trên trang web
+- margin : 0; xóa margin mặc định của trình duyệt
+- padding : 0; xóa padding mặc định của trình duyệt
+- box-sizing: border-box; dễ kiểm soát kích thước
