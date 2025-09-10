@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+  </head>
+  <link
+    href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .box {
+      border: 1px solid red;
+      border-radius: 50%;
+      width: 200px;
+      top: 0;
+      left: 0;
+      position: relative;
+
+      display: flex;
+      height: 200px;
+    }
+    .box .item {
+      background-color: green;
+      border-radius: 50%;
+      width: 100px;
+      display: flex;
+
+      height: 100px;
+    }
+    .box p {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border: 1px solid yellow;
+      animation: myAnimation 2s ease-in-out infinite;
+    }
+    @keyframes myAnimation {
+      0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+      100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <div class="box">
+      <div class="item"></div>
+      <p></p>
+    </div>
+  </body>
+</html>

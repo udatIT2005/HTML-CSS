@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    ul {
+      margin: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    li {
+      list-style: none;
+    }
+    a {
+      text-decoration: none;
+      padding: 12px;
+      position: relative;
+      /* border: 1px solid red; */
+    }
+    a::after {
+      transition: all ease-in-out 0.3s;
+      display: inline-block;
+      content: "";
+      width: 0;
+      bottom: 0;
+      left: 0;
+      height: 4px;
+      background-color: green;
+      position: absolute;
+      border-radius: 99px;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+  </style>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+
+          <li><a href="">Contact</a></li>
+
+          <li><a href="">Home</a></li>
+          <li><a href="">Blog</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>

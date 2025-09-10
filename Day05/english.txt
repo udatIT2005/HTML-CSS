@@ -1,0 +1,15 @@
+Vocabulary : 
+1.scale : Tỉ lệ 
+2.rotate : Xoay 
+3.angle : góc
+4.skew : nghiêng
+5.heart : trái tim 
+6.before : trước
+7.after : sau
+8.duration : khoảng thời gian 
+9.time : thời gian 
+10.delay : trì hoãn 
+11. infinite : vô hạn
+12. duration : khoảng thời gian 
+13. running : đang chạy 
+14. paused : tạm dừng

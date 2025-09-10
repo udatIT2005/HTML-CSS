@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform Demo</title>
+    <style>
+      body {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 20px;
+        perspective: 400px;
+        font-family: Arial, sans-serif;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background: tomato;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.5s;
+        border-radius: 8px;
+      }
+      .box:hover {
+        background: seagreen;
+      }
+
+      /* Ví dụ transform */
+      .translate:hover {
+        transform: translate(50px, 30px);
+      }
+      .translateX:hover {
+        transform: translateX(60px);
+      }
+      .translateY:hover {
+        transform: translateY(-40px);
+      }
+
+      .scale:hover {
+        transform: scale(1.5, 1.2);
+      }
+      .scaleX:hover {
+        transform: scaleX(-1);
+      }
+      .scaleY:hover {
+        transform: scaleY(-1);
+      }
+
+      .rotate:hover {
+        transform: rotate(45deg);
+      }
+
+      .skew:hover {
+        transform: skew(20deg, 10deg);
+      }
+      .skewX:hover {
+        transform: skewX(-30deg);
+      }
+      .skewY:hover {
+        transform: skewY(-20deg);
+      }
+
+      /* 3D */
+      .rotateX:hover {
+        transform: rotateX(-45deg);
+      }
+      .rotateY:hover {
+        transform: rotateY(45deg);
+      }
+      .rotateZ:hover {
+        transform: rotateZ(60deg);
+      }
+
+      .scene {
+        width: 120px;
+        height: 120px;
+        background: tomato;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 1s;
+        transform-style: preserve-3d; /* cho phép hiệu ứng 3D */
+        border-radius: 10px;
+      }
+
+      /* translateZ: di chuyển ra vào màn hình */
+      .translateZ:hover {
+        transform: translateZ(100px);
+      }
+
+      /* scaleZ: phóng to/thu nhỏ theo chiều sâu */
+      .scaleZ:hover {
+        transform: scaleZ(3) rotateY(30deg);
+      }
+
+      /* perspective: tạo chiều sâu */
+      .perspectiveBox {
+        perspective: 200px; /* đặt chiều sâu gần */
+      }
+      .perspectiveBox .scene:hover {
+        transform: rotateY(60deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box translate">translate</div>
+    <div class="box translateX">translateX</div>
+    <div class="box translateY">translateY</div>
+
+    <div class="box scale">scale</div>
+    <div class="box scaleX">scaleX</div>
+    <div class="box scaleY">scaleY</div>
+
+    <div class="box rotate">rotate</div>
+
+    <div class="box skew">skew</div>
+    <div class="box skewX">skewX</div>
+    <div class="box skewY">skewY</div>
+
+    <div class="box rotateX">rotateX</div>
+    <div class="box rotateY">rotateY</div>
+    <div class="box rotateZ">rotateZ</div>
+    <div class="scene translateZ">translateZ</div>
+    <div class="scene scaleZ">scaleZ</div>
+    <div class="perspectiveBox">
+      <div class="scene">perspective</div>
+    </div>
+  </body>
+</html>

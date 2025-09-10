@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tranform heart</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .heart {
+      margin: 200px;
+      text-align: center;
+      width: 100px;
+      height: 100px;
+      transform: rotate(-45deg);
+      position: relative;
+      background-color: red;
+      transition: all 0.5s ease-in-out 0.2s;
+    }
+    .heart:hover {
+      transform: rotate(-45deg) scale(1.5);
+    }
+    .heart::before {
+      width: 100px;
+      height: 100px;
+      content: "";
+      left: 0;
+      top: -50px;
+      display: inline-block;
+      border-radius: 50%;
+      position: absolute;
+      background-color: red;
+    }
+    .heart::after {
+      content: "";
+      right: -50px;
+      border-radius: 50%;
+      width: 100px;
+      top: 0;
+      position: absolute;
+      display: inline-block;
+      height: 100px;
+      background-color: red;
+    }
+    .heart > p {
+      color: aliceblue;
+      position: absolute;
+      top: 35px;
+      right: 65px;
+      width: 50px;
+      transform: translateX(100%) rotate(45deg);
+      z-index: 99;
+    }
+  </style>
+  <body>
+    <div class="heart">
+      <p>Đạt</p>
+    </div>
+  </body>
+</html>
