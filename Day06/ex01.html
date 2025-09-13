@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Times New Roman", Times, serif;
+      background-color: gray;
+    }
+    .container {
+      padding: 30px 169px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      padding-bottom: 25px;
+    }
+    form {
+      background-color: #fff;
+      border-radius: 10px;
+    }
+    label {
+      display: block;
+      padding-bottom: 8px;
+    }
+    input {
+      padding: 8px;
+      width: 100%;
+    }
+    form .forgot-form {
+      padding: 24px 24px 0px 24px;
+      border-radius: 10px;
+    }
+    form .forgot-form-account {
+      padding: 24px 24px;
+    }
+    form .forgot-form button {
+      padding: 8px;
+      width: 100%;
+      border: 0px solid #007;
+      border-radius: 8px;
+      background: var(--iOS-Blue, #007aff);
+      color: white;
+      font-weight: bold;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    form .form-password {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+      <form action="">
+        <div class="forgot-form">
+          <label for="">Email</label>
+          <input type="email" placeholder="example@email.com" />
+        </div>
+        <div class="forgot-form">
+          <div class="form-password">
+            <label for="">Password</label>
+            <a href="">Forgot password</a>
+          </div>
+          <input type="password" placeholder="******" />
+        </div>
+        <div class="forgot-form">
+          <button>Login</button>
+        </div>
+        <div class="forgot-form-account">
+          <span> Don't have account ? </span>
+          <a href="">Create new account</a>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
