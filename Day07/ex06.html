@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Area</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: grid;
+        grid-template-areas:
+          "header header header"
+          "sidebar main main"
+          "footer footer footer";
+        gap: 10px;
+      }
+      header {
+        background-color: red;
+        grid-area: header;
+      }
+      .sidebar {
+        background-color: green;
+        grid-area: sidebar;
+      }
+      main {
+        background-color: blue;
+        grid-area: main;
+      }
+      footer {
+        background-color: gray;
+        grid-area: footer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>header</header>
+    <div class="sidebar">sidebar</div>
+    <main>
+      <h1>Danh sách sản phẩm</h1>
+      <div class="product-list">
+        <div class="product-item">item1</div>
+        <div class="product-item">item2</div>
+        <div class="product-item">item3</div>
+        <div class="product-item">item4</div>
+        <div class="product-item">item5</div>
+        <div class="product-item">item6</div>
+      </div>
+    </main>
+    <footer>footer</footer>
+  </body>
+</html>
