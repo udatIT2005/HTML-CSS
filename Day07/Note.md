@@ -9,6 +9,8 @@
 
 ## thuộc tính cho container(cha) : display : grid
 
+- justify-content, align-content → dịch chuyển toàn bộ lưới trong container (khi container lớn hơn grid).
+
 ### Định nghĩa cột hàng
 
 - grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -29,13 +31,9 @@
 - grid-row: 2 / 4; /_ span từ hàng 2 → 3 _/
 - grid-column: span 2; /_ chiếm 2 cột _/
 - grid-row: span 3; /_ chiếm 3 hàng _/
+- justify-self, align-self, place-self → tác động từng item trong ô.
 
-- fraction : phần chia
-- repeat : lập lại
-- grid : lưới
-- fx : là tỉ lệ tương đối
-- px : tỉ lệ cứng
-- Cách xem tài liệu là di chuột hover vào phần tử và tra xem trên MDN reference
+- justify-items, align-items, place-items → tác động tất cả item trong grid (bên trong từng ô).
 
 ##### Chọn được phần tử đầu tiên của Css là nth-child hoặc first-child và trong thẻ cha có nhiều thẻ con thì dùng > \* để css chung
 
@@ -49,3 +47,10 @@ grid-template-areas:
 ###### grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
 
 ###### grid-template: <grid-template-rows> / <grid-template-columns>;
+
+- fraction : phần chia
+- repeat : lập lại
+- grid : lưới
+- fx : là tỉ lệ tương đối
+- px : tỉ lệ cứng
+- Cách xem tài liệu là di chuột hover vào phần tử và tra xem trên MDN reference
