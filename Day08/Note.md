@@ -9,3 +9,42 @@
     - Tên website
 
 ## Render là quá trình vẽ giao diện ra màn hình từ code
+
+## Đơn vị trong Css cho responve
+
+- % là tính theo phần trăm cha
+- vw/vh theo chiều rộng chiều cao của màn hình
+- em, rem fonrt chữ padding margin linh hoạt
+- minmax(), fr trong css grid, tự động co giãn
+
+### Media Queries dùng để thay đổi Css dựa theo kích thước màn hình
+
+- exam: @media (max-width: 990){
+  body{
+  background-color : red
+  }
+  }
+  @media (min-width: 491px) and (max-width: 786px){
+  body{
+  background-color: blue;
+  }
+  }
+
+#### Layout responive
+
+1. Flex box
+2. Css Grid
+
+##### Ảnh và Video
+
+ex : img{
+max-width : 100%
+height : auto
+}
+
+###### Mobile first và Destop first
+
+###### Framework hỗ trợ responsive
+
+1. Bootstrap
+2. TailwinCss
