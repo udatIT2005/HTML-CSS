@@ -7,6 +7,8 @@
     - Render dúng tỷ lệ theo màn hình thiết bị 
     <title>Document</title>
     - Tên website
+    <!DOCTYPE html>
+    - Doctype giúp trình duyệt biết phiên bản HTML để render đúng cách
 
 ## Render là quá trình vẽ giao diện ra màn hình từ code
 
