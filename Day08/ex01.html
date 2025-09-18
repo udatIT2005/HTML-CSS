@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      margin: 0px auto;
+      width: 1170px;
+      border: 2px solid red;
+    }
+    .product-list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .item {
+      border: 2px solid green;
+      padding: 20px;
+      min-width: 150px;
+    }
+    @media screen and (max-width: 992px) {
+      .container {
+        background-color: aqua;
+        width: 700px;
+      }
+      .product-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    }
+    @media screen {
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Danh sách sản phẩm</h1>
+      <div class="product-list">
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+        <div class="item">1</div>
+      </div>
+    </div>
+  </body>
+</html>
